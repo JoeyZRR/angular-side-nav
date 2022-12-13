@@ -1,0 +1,25 @@
+<div class="house-detail-container">
+  <div class="detail-title">
+    <mat-icon>home</mat-icon>
+    <span>House Detail</span>
+  </div>
+  <div class="house-info">
+    <a href="https://goo.gl/maps/fh6s1E6v73rmPgvQ7">{{ address }}</a>
+    <div class="house-roommate">
+      <table>
+        <thead>
+          <tr>
+            <th>Names</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let h of houseDetail">
+            <td>{{ h.name }}</td>
+            <td>{{ h.phone }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

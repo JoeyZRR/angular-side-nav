@@ -1,0 +1,65 @@
+<mat-nav-list class="sidenav-list">
+  <div *ngIf="token === ''; else elseblock">
+    <a mat-list-item routerLink="/login" (click)="onToggleClose()">
+      <mat-icon>input</mat-icon>
+      <span>Login</span>
+    </a>
+    <a mat-list-item routerLink="/signup" (click)="onToggleClose()">
+      <mat-icon>account_circle</mat-icon>
+      <span>SignUp</span>
+    </a>
+  </div>
+  <ng-template #elseblock>
+    <a mat-list-item routerLink="/" (click)="onToggleClose()">
+      <mat-icon>public</mat-icon>
+      <span>Home</span>
+    </a>
+    <a
+      id="nav-visa"
+      mat-list-item
+      routerLink="/visastatus"
+      (click)="onToggleClose()"
+    >
+      <mat-icon>description</mat-icon>
+      <span>Visa Status Management</span>
+    </a>
+    <a
+      id="nav-opt"
+      mat-list-item
+      routerLink="/visastatus"
+      (click)="onToggleClose()"
+    >
+      <mat-icon>school</mat-icon>
+      <span>OPT STEM</span>
+    </a>
+    <a
+      id="nav-housing"
+      mat-list-item
+      routerLink="/housing"
+      (click)="onToggleClose()"
+    >
+      <mat-icon>home</mat-icon>
+      <span>Housing</span>
+    </a>
+    <div id="nav-housing-detail">
+      <a
+        id="nav-house-detail"
+        mat-list-item
+        routerLink="/housing"
+        (click)="onToggleClose()"
+      >
+        <mat-icon>home</mat-icon>
+        <span>House Detail</span>
+      </a>
+      <a
+        id="nav-report"
+        mat-list-item
+        routerLink="housing/report"
+        (click)="onToggleClose()"
+      >
+        <mat-icon>warning</mat-icon>
+        <span>Report Facility Issue</span>
+      </a>
+    </div>
+  </ng-template>
+</mat-nav-list>

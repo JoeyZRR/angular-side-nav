@@ -1,0 +1,29 @@
+.sidenav-list span {
+  padding-left: 8px;
+}
+
+#nav-opt {
+  margin-left: 30px;
+  display: none;
+}
+
+#nav-visa:hover + #nav-opt {
+  display: block;
+}
+
+#nav-opt:hover {
+  display: block;
+}
+
+#nav-housing-detail {
+  margin-left: 30px;
+  display: none;
+}
+
+#nav-housing:hover + #nav-housing-detail {
+  display: block;
+}
+
+#nav-housing-detail:hover {
+  display: block;
+}
